@@ -1,6 +1,8 @@
-# Logstash 
+# NGINX with Logstash 
 
-This image will run a docker container for logstash.
+This image will run a docker container for NGINX with logstash. 
+Logstash will send the NGINX logfiles to ES.
+
 to run the container  
 
 docker run -i --link es:es hfranzen/logstash
