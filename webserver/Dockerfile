@@ -20,6 +20,6 @@ ADD nginx.conf /etc/nginx/nginx.conf
 ADD startup.sh /startup.sh 
 ADD nginx /opt/logstash-1.4.2/patterns/nginx
 
-# ENTRYPOINT sh /startup.sh
+ENTRYPOINT sh /startup.sh
    
 
