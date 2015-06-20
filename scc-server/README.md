@@ -1,0 +1,1 @@
+# SCC Server Configuration Collector 
