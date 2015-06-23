@@ -29,7 +29,7 @@ function (Settings) {
      *  +elasticsearch: {server: "http://localhost:9200", withCredentials: true}+
      *
      */
-    elasticsearch: "http://softlayer/elasticsearch/",
+    elasticsearch: "http://softlayer.noudat.nl/elasticsearch/",
 
     /** @scratch /configuration/config.js/5
      *
