@@ -1,0 +1,2 @@
+docker run -t -i --rm -p 80:80 -h CLOUDNL-demo  puppet  /bin/bash
+
