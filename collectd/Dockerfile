@@ -7,8 +7,8 @@ RUN yum -y install epel-release && \
 
 ADD collectd.conf /etc/collectd.conf
 
-ENTRYPOINT collectd -t 
+ENTRYPOINT /usr/sbin/collectd -f -C /etc/collectd.conf
 
-CMD /etc/collectd.conf
+
 
 

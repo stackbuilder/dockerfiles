@@ -15,4 +15,5 @@ RUN mkdir -p /var/www/ && \
 
 ADD config.js /var/www/kibana/config.js
 ADD nginx.conf /etc/nginx/nginx.conf
-
+ADD htpasswd /etc/nginx/.htpasswd
+ENTRYPOINT  /usr/sbin/nginx -g "daemon off;"
