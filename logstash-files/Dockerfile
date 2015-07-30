@@ -11,6 +11,8 @@ RUN cd /opt/ && \
    mkdir /etc/logstash
 
 ADD server.conf /etc/logstash/server.conf
+ADD grok-patterns.postfix /etc/logstash/grok-patterns.postfix
+ADD grok-patterns.httpd /etc/logstash/grok-patterns.httpd
 
 ENTRYPOINT /opt/logstash-1.4.2/bin/logstash -f /etc/logstash/server.conf 
    
